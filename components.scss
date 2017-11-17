@@ -1,0 +1,57 @@
+iframe {
+    display: $iframe-display;
+    width: $iframe-width;
+    height: $iframe-height;
+    max-width: $iframe-max-width;
+    @include margin-shorthand-with-screens-support((
+        top: $iframe-margin-top,
+        bottom: $iframe-margin-bottom,
+        left: $iframe-margin-left,
+        right: $iframe-margin-right
+    ), $iframe-margin-for-screens);
+    @include outline-shorthand((
+        width: $iframe-outline-width,
+        style: $iframe-outline-style,
+        color: $iframe-outline-color,
+        make-shorthand: true
+    ));
+    @include border-shorthand((
+        border: (
+            width: $iframe-border-width,
+            style: $iframe-border-style,
+            color: $iframe-border-color,
+            make-shorthand: true
+        ),
+        border-top: (
+            width: $iframe-border-top-width,
+            style: $iframe-border-top-style,
+            color: $iframe-border-top-color,
+            make-shorthand: $iframe-border-top-make-shorthand
+        ),
+        border-bottom: (
+            width: $iframe-border-bottom-width,
+            style: $iframe-border-bottom-style,
+            color: $iframe-border-bottom-color,
+            make-shorthand: $iframe-border-bottom-make-shorthand
+        ),
+        border-left: (
+            width: $iframe-border-left-width,
+            style: $iframe-border-left-style,
+            color: $iframe-border-left-color,
+            make-shorthand: $iframe-border-left-make-shorthand
+        ),
+        border-right: (
+            width: $iframe-border-right-width,
+            style: $iframe-border-right-style,
+            color: $iframe-border-right-color,
+            make-shorthand: $iframe-border-right-make-shorthand
+        )
+    ));
+    @include padding-shorthand((
+        top: $iframe-padding-top,
+        bottom: $iframe-padding-bottom,
+        left: $iframe-padding-left,
+        right: $iframe-padding-right
+    ));
+    @include outline-extra-style();
+}

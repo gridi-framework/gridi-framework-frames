@@ -1,0 +1,50 @@
+$iframe-display: inline-block;
+$iframe-width: auto;
+$iframe-height: auto;
+$iframe-max-width: 100%;
+
+//Margins
+$iframe-margin-top: $elements-margin-top !default;
+$iframe-margin-bottom: $elements-margin-bottom !default;
+$iframe-margin-left: $elements-margin-left !default;
+$iframe-margin-right: $elements-margin-right !default;
+$iframe-margin-for-screens: $elements-margin-for-screens !default;
+
+//Outline
+$iframe-outline-width: 0 !default;
+$iframe-outline-style: null !default;
+$iframe-outline-color: null !default;
+
+//Borders
+$iframe-border-width: 0 !default;
+$iframe-border-style: null !default;
+$iframe-border-color: null !default;
+
+$iframe-border-top-width: null !default;
+$iframe-border-top-style: null !default;
+$iframe-border-top-color: null !default;
+$iframe-border-top-make-shorthand: false !default;
+
+$iframe-border-bottom-width: null !default;
+$iframe-border-bottom-style: null !default;
+$iframe-border-bottom-color: null !default;
+$iframe-border-bottom-make-shorthand: false !default;
+
+$iframe-border-left-width: null !default;
+$iframe-border-left-style: null !default;
+$iframe-border-left-color: null !default;
+$iframe-border-left-make-shorthand: false !default;
+
+$iframe-border-right-width: null !default;
+$iframe-border-right-style: null !default;
+$iframe-border-right-color: null !default;
+$iframe-border-right-make-shorthand: false !default;
+
+//Paddings
+$iframe-padding-top: 0 !default;
+$iframe-padding-bottom: 0 !default;
+$iframe-padding-left: 0 !default;
+$iframe-padding-right: 0 !default;
+
+//Extra style
+@mixin outline-extra-style() {}
