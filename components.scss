@@ -53,5 +53,5 @@ iframe {
         left: $iframe-padding-left,
         right: $iframe-padding-right
     ));
-    @include outline-extra-style();
+    @include iframe-extra-style();
 }
