@@ -15,38 +15,14 @@ iframe {
         color: $iframe-outline-color,
         make-shorthand: true
     ));
-    @include border-shorthand((
+    @include border-shorthand(map-merge((
         border: (
             width: $iframe-border-width,
             style: $iframe-border-style,
             color: $iframe-border-color,
             make-shorthand: true
-        ),
-        border-top: (
-            width: $iframe-border-top-width,
-            style: $iframe-border-top-style,
-            color: $iframe-border-top-color,
-            make-shorthand: $iframe-border-top-make-shorthand
-        ),
-        border-bottom: (
-            width: $iframe-border-bottom-width,
-            style: $iframe-border-bottom-style,
-            color: $iframe-border-bottom-color,
-            make-shorthand: $iframe-border-bottom-make-shorthand
-        ),
-        border-left: (
-            width: $iframe-border-left-width,
-            style: $iframe-border-left-style,
-            color: $iframe-border-left-color,
-            make-shorthand: $iframe-border-left-make-shorthand
-        ),
-        border-right: (
-            width: $iframe-border-right-width,
-            style: $iframe-border-right-style,
-            color: $iframe-border-right-color,
-            make-shorthand: $iframe-border-right-make-shorthand
         )
-    ));
+    ), $iframe-borders));
     @include padding-shorthand((
         top: $iframe-padding-top,
         bottom: $iframe-padding-bottom,
