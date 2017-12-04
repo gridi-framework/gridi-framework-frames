@@ -28,4 +28,4 @@ $iframe-padding-left: 0 !default;
 $iframe-padding-right: 0 !default;
 
 //Extra style
-@mixin iframe-extra-style() {}
+//@mixin iframe-extra-style() {} //Create this mixin before import module when you want add some special style for element

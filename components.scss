@@ -29,5 +29,7 @@ iframe {
         left: $iframe-padding-left,
         right: $iframe-padding-right
     ));
-    @include iframe-extra-style();
+    @if mixin-exists(iframe-extra-style) {
+        @include iframe-extra-style();
+    }
 }
